@@ -97,6 +97,11 @@ export default function Form({ searchParams }: Readonly<Props>) {
           </div>
         </div>
       </div>
+      {fileName && (
+            <p className="text-center mt-2 text-sm text-gray-600 bg-blue-200 font-semibold p-1" >
+              {fileName}
+            </p>
+          )}
       <div className="flex space-x-4 items-center mx-auto">
         <div>
           <input
@@ -118,8 +123,9 @@ export default function Form({ searchParams }: Readonly<Props>) {
             htmlFor="foto"
             className="flex items-center gap-2 truncate max-w-[18rem] md:max-w-sm py-1 px-4 lg:py-2 rounded-full border-0 lg:text-lg text-md font-semibold bg-blue-100 text-black-700 h-10 hover:bg-blue-300 cursor-pointer duration-100"
           >
-            <FaFileImage /> {fileName ?? "Pilih Foto"}
+            <FaFileImage /> {"Pilih Foto"}
           </label>
+        
         </div>
         <Button
           onClick={() => {
@@ -139,6 +145,7 @@ export default function Form({ searchParams }: Readonly<Props>) {
           <FaDownload /> Download
         </Button>
       </div>
+     
     </div>
   );
 }
