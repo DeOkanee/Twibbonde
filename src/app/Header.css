@@ -1,0 +1,57 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 0 10px 10px rgba(44, 44, 44, 0.432);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 888; /* Memastikan header berada di atas konten lainnya */
+  }
+  
+  .logo-left img,
+  .logo-right img {
+    width: 50px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin: 4px 5px;
+  }
+  
+  .title {
+    flex-grow: 1;
+    font-family: "Font1", sans-serif;
+  }
+  
+  .title h1 {
+    font-size: 19px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-bem {
+    width: 22px;
+    height: auto;
+    margin-right: 5px;
+  }
+  @media (max-width: 787px) {
+    .logo-left img,
+    .logo-right img {
+      width: 40px; /* Sesuaikan ukuran logo */
+    }
+    .title {
+      font-size: 11px;
+    }
+}
+  @media (max-width: 440px) {
+    .logo-left img,
+    .logo-right img {
+      width: 40px; /* Sesuaikan ukuran logo */
+    }
+    .title {
+      font-size: 11px;
+    }
+}

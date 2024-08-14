@@ -86,7 +86,7 @@ export default function Form({ searchParams }: Readonly<Props>) {
               onChange={(e) => {
                 setScale(parseFloat(e.currentTarget.value));
               }}
-              className="bg-red-500 !w-[10rem] md:!w-[15rem]"
+              className="bg-blue-500 !w-[10rem] md:!w-[15rem]"
             />
             <Button
               variant={"primary"}
@@ -116,7 +116,7 @@ export default function Form({ searchParams }: Readonly<Props>) {
           />
           <label
             htmlFor="foto"
-            className="flex items-center gap-2 truncate max-w-[18rem] md:max-w-sm py-1 px-4 lg:py-2 rounded-full border-0 lg:text-lg text-md font-semibold bg-red-100 text-red-700 h-10 hover:bg-red-300 cursor-pointer duration-100"
+            className="flex items-center gap-2 truncate max-w-[18rem] md:max-w-sm py-1 px-4 lg:py-2 rounded-full border-0 lg:text-lg text-md font-semibold bg-blue-100 text-black-700 h-10 hover:bg-blue-300 cursor-pointer duration-100"
           >
             <FaFileImage /> {fileName ?? "Pilih Foto"}
           </label>
