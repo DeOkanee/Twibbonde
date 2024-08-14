@@ -48,7 +48,7 @@ export default function Form({ searchParams }: Readonly<Props>) {
   }, [scale]);
 
   return (
-    <div className="flex flex-col gap-4 bg-white p-4 rounded-md">
+    <div className="flex flex-col gap-9 bg-white p-5 rounded-md">
       <div className="flex justify-center items-center space-y-4 flex-col">
         <Canvas
           width={canvasHook.recommendedSize.width}
@@ -129,7 +129,7 @@ export default function Form({ searchParams }: Readonly<Props>) {
             if (data) {
               downloadURI(
                 data,
-                `Twibbon ${searchParams?.title ?? "Twibbonde-Hasil"}.jpg`
+                `Twibbonde ${searchParams?.title ?? "Hasil"}.jpg`
               );
             }
           }}
