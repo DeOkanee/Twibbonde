@@ -34,9 +34,8 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   margin-top: -12px; /* Centers thumb on the track */
-
-  /*custom styles*/
-  @apply bg-primary-500 rounded-full mt-[-3.5px];
+  background-color: #4299e1; /* Equivalent to bg-primary-500 in Tailwind */
+  border-radius: 9999px; /* Equivalent to rounded-full in Tailwind */
   height: 1rem;
   width: 1rem;
 }
@@ -58,10 +57,8 @@ input[type="range"]::-moz-range-track {
 /* slider thumb */
 input[type="range"]::-moz-range-thumb {
   border: none; /*Removes extra border that FF applies*/
-  border-radius: 0; /*Removes default border-radius that FF applies*/
-
-  /*custom styles*/
-  @apply bg-primary-500 rounded-full mt-[-3.5px];
+  border-radius: 9999px; /* Removes default border-radius that FF applies */
+  background-color: #4299e1; /* Equivalent to bg-primary-500 in Tailwind */
   height: 1rem;
   width: 1rem;
 }

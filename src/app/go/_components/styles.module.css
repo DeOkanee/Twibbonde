@@ -1,0 +1,6 @@
+@media (max-width: 767px) {
+    .canvas-size {
+      width: 120%; /* Atur lebar 100% pada layar yang lebih kecil */
+    }
+  }
+  
