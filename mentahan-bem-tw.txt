@@ -7,7 +7,7 @@ export default function Home({ searchParams }: Readonly<Props>) {
   const [fileName, setFileName] = useState<string | null>(null);
 
   const handleLoadImage = async () => {
-    const imageUrl = "/TWIBBON.png";
+    const imageUrl = "/A2.png";
     const response = await fetch(imageUrl);
     const blob = await response.blob();
     const reader = new FileReader();
@@ -17,7 +17,7 @@ export default function Home({ searchParams }: Readonly<Props>) {
       localStorage.setItem("customFrameUrl", result);
     };
 
-    setFileName("TWIBBON.png");
+    setFileName("A2.png");
     reader.readAsDataURL(blob);
   };
 
@@ -31,7 +31,7 @@ export default function Home({ searchParams }: Readonly<Props>) {
     <div className="flex-1 flex items-center justify-center flex-col gap-12 p-6">
       <div className="w-full md:w-1/2">
         <h1 className="text-[22px] sm:text-[36px] font-bold leading-[130%] mb-[18px] text-center">
-          MASAYU 2024
+          LKMM-TD 2024
         </h1>
         <p className="text-[18px] text-neutral-500 leading-[130%] text-center mt-1 ">
           Silahkan pilih foto dan buat Twibbon kamu
