@@ -9,14 +9,14 @@ const Header: React.FC = () => {
         onClick={() => window.open("https://uhnsugriwa.ac.id/")}
         style={{ cursor: "pointer" }}
       >
-        <img src="/img/LOGO UHN.png" alt="Logo Left" />
+        <img src="https://res.cloudinary.com/dr8dzahhw/image/upload/v1724736625/rclimerx96mykamipbrg.png" alt="Logo Left" />
       </div>
       <div className="title">
         <h1
           onClick={() => window.open("https://web-bem-fda-official.vercel.app/")}
           style={{ cursor: "pointer" }}
         >
-          <img src="img/ICON BEM FDA.png" alt="BEM FDA" className="icon-bem" />
+          <img src="https://res.cloudinary.com/dr8dzahhw/image/upload/v1724736453/qxa0eckzsqmvqvs2ycsa.png" alt="BEM FDA" className="icon-bem" />
           BEM FDA OFFICIAL
         </h1>
       </div>
@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         onClick={() => window.open("https://www.instagram.com/orkemas_fda/")}
         style={{ cursor: "pointer" }}
       >
-        <img src="img/LOGO ORKEMAS.png" alt="Logo Right" />
+        <img src="https://res.cloudinary.com/dr8dzahhw/image/upload/v1724736600/hfk5zbffcfgh5p0dcwqa.png" alt="Logo Right" />
       </div>
     </header>
   );
